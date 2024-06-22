@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:loginuinew/pages/Signup_page.dart';
+import 'package:loginuinew/routes.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,7 +18,8 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: const Color.fromRGBO(30, 88, 241, 1)),
         useMaterial3: true,
       ),
-      home: const SignupPage(),
+
+      onGenerateRoute: Routes.generateRoute,
     );
   }
 }
