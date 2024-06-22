@@ -14,7 +14,7 @@ class RoundedTextFormField extends StatelessWidget {
 
     return Container(
       width: MediaQuery.of(context).size.width*0.65,
-      decoration: BoxDecoration(
+      decoration: const BoxDecoration(
           boxShadow:[BoxShadow(
               color:Color.fromRGBO(61, 71, 77, 0.08),
               spreadRadius: 10,
@@ -23,7 +23,7 @@ class RoundedTextFormField extends StatelessWidget {
           )]),
       child: Center(
         child: Container(
-          decoration: BoxDecoration(
+          decoration: const BoxDecoration(
             color:Colors.white,
             borderRadius:BorderRadius.all(Radius.circular(100))
           ),
@@ -33,7 +33,7 @@ class RoundedTextFormField extends StatelessWidget {
               prefixIcon: Icon(prefixIcon, color: Colors.blue),
               border: const OutlineInputBorder(borderSide: BorderSide.none),
               hintText: hintText,
-              hintStyle: TextStyle(
+              hintStyle: const TextStyle(
                   fontSize: 10, color: Color.fromRGBO(131, 143, 160, 1.0))),
 
         )),

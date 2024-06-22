@@ -1,15 +1,16 @@
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:loginuinew/widgets/rounded_circular_button.dart';
 import 'package:loginuinew/widgets/rounded_text_form_field.dart';
 
 class LoginPage extends StatelessWidget {
+  const LoginPage({super.key});
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
       resizeToAvoidBottomInset:false,
-      backgroundColor: Color.fromRGBO(255, 255, 255, 1.0),
+      backgroundColor: const Color.fromRGBO(255, 255, 255, 1.0),
       body: _buildUI(context),
     );
   }
@@ -28,14 +29,14 @@ class LoginPage extends StatelessWidget {
        padding: EdgeInsets.only(top:MediaQuery.of(context).size.height*0.10),
         width: MediaQuery.of(context).size.width,
         height: MediaQuery.of(context).size.height * 0.25,
-        color: Color.fromRGBO(230, 253, 253, 1.0),
+        color: const Color.fromRGBO(230, 253, 253, 1.0),
         child: Row(
           mainAxisAlignment:MainAxisAlignment.spaceBetween,
           mainAxisSize:MainAxisSize.max,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
-            Padding(
-              padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
+            const Padding(
+              padding: EdgeInsets.fromLTRB(20, 0, 0, 0),
               child: Text(
                 "Sign In",
                 style: TextStyle(
@@ -71,7 +72,7 @@ class LoginPage extends StatelessWidget {
   Widget _formField(BuildContext context){
     return SizedBox(
       height: MediaQuery.of(context).size.height*0.2,
-      child:Column(
+      child:const Column(
         mainAxisSize: MainAxisSize.max,
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         crossAxisAlignment: CrossAxisAlignment.end,
@@ -93,10 +94,10 @@ class LoginPage extends StatelessWidget {
          SizedBox(
            width: MediaQuery.of(context).size.width*0.5,
            height: MediaQuery.of(context).size.height*0.06,
-             child:RoundedCircularButton(text:"Sign In",),
+             child:const RoundedCircularButton(text:"Sign In",),
          ),
-         Padding(
-           padding: const EdgeInsets.symmetric(vertical: 30),
+         const Padding(
+           padding: EdgeInsets.symmetric(vertical: 30),
            child: Text("I don't have an account",style: TextStyle(
              color: Colors.blue,
              fontSize: 20,
